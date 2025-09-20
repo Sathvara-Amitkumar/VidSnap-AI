@@ -8,7 +8,7 @@ from config import ELEVENLABS_API_KEY
 load_dotenv()
 
 elevenlabs = ElevenLabs(
-    api_key=ELEVENLABS_API_KEY,
+    api_key=ELEVENLABS_API,
 )
 
 
