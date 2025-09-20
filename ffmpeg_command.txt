@@ -1,0 +1,14 @@
+ffmpeg -f concat -safe 0 -i user_uploads/2a745221-7dc4-11f0-9a48-48684afdf957/input.txt -i user_uploads/2a745221-7dc4-11f0-9a48-48684afdf957/audio.mp3 -vf "scale=1080:1920:force_original_aspect_ratio=decrease,pad=1080:1920:(ow-iw)/2:(oh-ih)/2:black" -c:v libx264 -c:a aac -shortest -r 30 -pix_fmt yuv420p static/reels/reel.mp4
+
+
+ffmpeg \
+  -f concat -safe 0 -i user_uploads/2a745221-7dc4-11f0-9a48-48684afdf957/input.txt \
+  -i user_uploads/2a745221-7dc4-11f0-9a48-48684afdf957/audio.mp3 \
+  -vf "scale=1080:1920:force_original_aspect_ratio=decrease,\
+       pad=1080:1920:(ow-iw)/2:(oh-ih)/2:black" \
+  -c:v libx264 -preset veryfast -crf 23 \
+  -c:a aac -b:a 192k \
+  -r 30 -pix_fmt yuv420p \
+  -movflags +faststart \
+  -t $(ffprobe -v error -show_entries format=duration -of default=noprint_wrappers=1:nokey=1 user_uploads/2a745221-7dc4-11f0-9a48-48684afdf957/input.txt) \
+  static/reels/reel.mp4

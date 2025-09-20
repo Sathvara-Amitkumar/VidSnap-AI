@@ -1,0 +1,20 @@
+file 'man.png'
+duration 1
+file 'Solo Leveling.jpg'
+duration 1
+file 'demon slayer.jpg'
+duration 1
+file '10743259.png'
+duration 1
+file '7055838.jpg'
+duration 1
+file '7055827.jpg'
+duration 1
+file 'IMG_20240223_175242_135.jpg'
+duration 1
+file '7055838.jpg'
+duration 1
+file '10743259.png'
+duration 1
+file 'demon slayer.jpg'
+duration 1
