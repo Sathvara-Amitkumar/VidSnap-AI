@@ -20,8 +20,6 @@ VidSnap AI is a web application that allows users to create engaging Instagram R
    - Generate a video using ffmpeg, combining your images and audio
 4. **View Gallery:** Visit the Gallery to see all generated reels.
 
-## Project Structure
-
 ## Setup
 
 1. **Clone the repository:**
