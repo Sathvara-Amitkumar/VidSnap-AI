@@ -29,3 +29,22 @@ VidSnap AI is a web application that allows users to create engaging Instagram R
    git clone https://github.com/yourusername/vidsnap-ai.git
    cd vidsnap-ai
    
+2. **Install dependencies:**
+   ```sh
+   pip install flask python-dotenv elevenlabs
+   
+3. **Configure API Keys:**
+    - Set your ElevenLabs API key in config.py:
+    ```sh
+    ELEVENLABS_API = "YOUR_API_KEY"
+
+4. **Start the background process:**
+    ```sh
+    python generate_process.py
+
+5. **Run the Flask server:**
+    ```sh
+    python main.py
+
+6. **Visit the app:**
+- Open http://localhost:5000 in your browser.
